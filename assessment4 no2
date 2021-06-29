@@ -1,0 +1,14 @@
+fun evenlyspaced (a:Int , b:Int , c:Int ): Boolean {
+    return if ((a * 3 == a + b + c) || (b * 3 == a + b + c) || (c * 3 == a + b + c)) {
+        return true
+
+    } else {
+        false
+    }
+}
+
+fun main() {
+    println(evenlyspaced(2,4,6))
+    println(evenlyspaced(4,6,2))
+    println (evenlyspaced(4,6,3))
+}
